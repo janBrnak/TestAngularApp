@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <!-- <base href="/"> -->
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>App</title>
+
+        <link rel='stylesheet' href='./bower_components/nvd3/build/nv.d3.css' />
+    </head>
+    <body ng-controller="IndexController as vm">
+
+        <div id="main" class="" ui-view></div>
+
+        <!-- Bower Components -->
+        <script src="./bower_components/angular/angular.js"></script>
+        <script src="./bower_components/angular-animate/angular-animate.js"></script>
+        <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="./bower_components/d3/d3.js"></script>
+        <script src="./bower_components/nvd3/build/nv.d3.js"></script>
+        <script src="./bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+        <!--// Bower Components -->
+
+        <!-- App Modules -->
+        <script src="./app/index.module.js"></script>
+        <script src="./app/index.config.js"></script>
+        <script src="./app/index.controller.js"></script>
+        <script src="./app/core/core.module.js"></script>
+        <script src="./app/core/services/resource.provider.js"></script>
+        <script src="./app/core/directives/pie-chart/pie-chart.component.js"></script>
+        <script src="./app/main/basic-info/basic-info.module.js"></script>
+        <script src="./app/main/basic-info/basic-info.config.js"></script>
+        <script src="./app/main/basic-info/basic-info.controller.js"></script>
+        <script src="./app/main/another-info/another-info.module.js"></script>
+        <script src="./app/main/another-info/another-info.config.js"></script>
+        <script src="./app/main/another-info/another-info.controller.js"></script>
+        <script src="./app/main/summary-info/summary-info.module.js"></script>
+        <script src="./app/main/summary-info/summary-info.config.js"></script>
+        <script src="./app/main/summary-info/summary-info.controller.js"></script>
+        <!--// App Modules -->
+    </body>
+</html>

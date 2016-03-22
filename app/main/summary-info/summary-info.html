@@ -1,0 +1,27 @@
+<h1>{{vm.title}}</h1>
+
+<div id="breadcrumb">
+    <ul>
+        <li><a ui-sref="basic-info">Basic Info</a></li>
+        <li><a ui-sref="another-info">Another Info</a></li>
+    </ul>
+</div>
+
+<div id="basic-info">
+	<h2>Basic Info</h2>
+	<div>Name: {{vm.basicInfo.name}}</div><br />
+	<div>E-mail: {{vm.basicInfo.email}}</div><br />
+	<div>Gender: {{vm.basicInfo.gender}}</div><br />
+</div>
+
+<div id="another-info">
+	<h2>Another Info</h2>
+	<div>Book: {{vm.anotherInfo.book}}</div><br />
+	<div ng-style="{color: vm.anotherInfo.color}">Color: {{vm.anotherInfo.color}}</div><br />
+</div>
+
+<div id="stat-widget">
+	<h2>Stats</h2>
+	<pie-chart title="Books" data="vm.statsDataBestBooks"></pie-chart>
+	<pie-chart title="Colors" data="vm.statsDataBestColors"></pie-chart>
+</div>

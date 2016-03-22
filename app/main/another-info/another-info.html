@@ -1,0 +1,25 @@
+<h1>{{vm.title}}</h1>
+
+<div id="breadcrumb">
+    <ul>
+        <li><a ui-sref="basic-info">Basic Info</a></li>
+    </ul>
+</div>
+
+<form name="another" novalidate>
+    Best book:
+    <input type="text" ng-model="vm.form.book" name="book" required="" />
+    <br />
+    <div ng-show="another.$submitted || another.book.$touched" ng-style="{'color': 'red'}">
+        <div ng-show="another.book.$error.required">Tell us your best book.</div>
+    </div>
+    <br />
+
+    Best color:
+    <select ng-model="vm.form.color" name="color">
+        <option ng-repeat="color in vm.listOfColors" value="{{color}}">{{color}}</option>
+    </select>
+    <br />
+
+    <input type="submit" ng-click="vm.submit(vm.form)" value="Next" />
+</form>
